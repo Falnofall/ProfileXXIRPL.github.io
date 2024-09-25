@@ -1,11 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <style>
+        ul li{
+            list-style-type: none;
+        }
+        .container {
+            text-align: center;
+            align-items: center;
+
+        }
+
+        img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .intro {
+            text-align: center;
+            word-break: break-all;
+        }
+
+        .skill {
+            align-items: center;
+            text-align: center;
+        }
+
+        .head{
+            background-color: #5C8374;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Halaman home</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    hello
+    <nav>
+        <ul>
+            <li><a href="index.php">Beranda</a></li>
+            <li><a href="">Profile</a></li>
+            <li class="dropdown"><a href="">Materi</a>
+                <ul>
+                    <li><a href="materi/penulisan-css.docx">CSS</a></li>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">Javascript</a></li>
+                    <li><a href="">HTML</a>
+                        <ul>
+                            <li><a href="">Dasar HTML</a></li>
+                            <li><a href="">Tag HTML</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">Contact</a></li>
+            <li><a href="register.php">Register</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+    <header class="container">
+        <br>
+        <img src="images/profil.jpg" alt="" srcset="">
+        <h1>Muhammad Naufal RAdithya</h1>
+        <h4>Web Developer</h4>
+    </header>
+    <br>
+    <hr>
+    <article class="intro">
+        <br>
+        <h2>Overview</h2>
+        <p>Hi, saya adalah seorang Developer yang berdomisili di Depok. <br>
+            Saat ini saya sedang belajar HTML
+            untul membuat profil pribadi</p>
+    </article>
+
+    <div class="skill" style="max-width: 500px; margin:3em auto;">
+        <table border="1" width="100%">
+            <thead>
+                <tr class="head">
+                    <th>Skill</th>
+                    <th>Pengalaman</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li> HTMl </li>
+                            <li>CSS Beginer</li>
+                            <li>Javascript</li>
+
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                Freelance di internaer
+                            </li>
+                            <li>
+                                Leader Local Linux Community
+                            </li>
+                            <li>
+                                Leader Local Web Junior
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+        <footer class="footer">
+            <p>Copyright &copy; 2024 Muhammad Naufal RAdithya</p>
+        </footer>
 </body>
+
 </html>
